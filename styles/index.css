@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+header{
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav p{
+  padding: 10px;
+}
+
+nav div{
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+nav div a{
+  margin-left: 10px;
+
+  text-decoration: none;
+
+  transition: color 0.5s;
+}
+
+nav div a:hover{
+  color: red;
+}
+
+i{
+  margin-right: 5px;
+}
+
+.vertical-bar{
+  height: 100vh;
+  width: 20vw;
+  border-right: solid;
+  border-width: 1px;
+}
+
+ul{
+  display: none;
+  transition: all 1s ease-in;
+}
+
+.container-li1{
+  padding: 10px 0 0 10px;
+}
+
+li:nth-child(n){
+  padding-top: 3px;
+  padding-left: 20px;
+}
+
+.container-li2{
+  padding: 10px 0 0 10px;
+}
+
+.container-li3{
+  padding: 10px 0 0 10px;
+}
+
+.container-li4{
+  padding: 10px 0 0 10px;
+}
+
+.show{
+  display: block;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  transition: all 0.05s ease;
+}
+
+.rotate{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.button-menu{
+  background: none;
+  border: none;
+}
