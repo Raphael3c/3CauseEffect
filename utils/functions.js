@@ -24,7 +24,7 @@ const people = [
     state: "Ceará", 
     country: "Brasil", 
     telephone: "85986907087", 
-    birthday: "14/01"
+    birthday: "14/01/1980"
   },
   {
     name: "Renato", 
@@ -36,7 +36,6 @@ const people = [
     birthday: "05/07"
   } 
 ]
-
 
 function show(id){
   document.getElementById(id).style.display = "block";
@@ -62,4 +61,18 @@ function toogleDisplay(id){
   }
 
   show(id)
+}
+
+function putInformation(name){
+  const onePeople = people.find(people => people.name == name)
+
+  console.log(onePeople)
+
+  document.getElementById("name").value = onePeople.name;
+  document.getElementById("nascimento").value = onePeople.birthday;
+  document.getElementById("Telefone").value = onePeople.telephone;
+  document.getElementById("CEP").value = "61913-345";
+  document.getElementById("Rua").value = onePeople.street;
+  document.getElementById("Cidade").value = onePeople.city;
+  document.getElementById("UF").value = onePeople.state;
 }

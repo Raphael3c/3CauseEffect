@@ -10,7 +10,7 @@
 <body>
 
   <header>
-    <script src="./utils/data.js" async></script>
+    <script src="./utils/functions.js" async></script>
     <nav>
       <p>LOGO</p>
 
@@ -22,7 +22,7 @@
     </nav>
   </header>
 
-  <body>
+  <div class="principalContent">
     <div class="vertical-bar">
       <div class="container-li1">
         <button 
@@ -33,7 +33,7 @@
         <i id="li1-i" class="arrow right"></i> A - G
         </button>
         <ul id="li1">
-          <li><a href="#">Action</a></li>
+          <li><button onclick="putInformation('Adenizia')">Adenizia</button></li>
           <li><a href="#">Another action</a></li>
         </ul>
       </div>
@@ -81,7 +81,46 @@
       </div>
 
     </div>
-  </body>
 
+    <main>
+
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" disabled>
+      </div>
+
+      <div>
+        <label for="nascimento">Nascimento:</label>
+        <input type="text" name="nascimento" id="nascimento" disabled>
+      </div>
+
+      <div>
+        <label for="Telefone">Telefone:</label>
+        <input type="text" name="Telefone" id="Telefone" disabled>
+      </div>
+
+      <div>
+        <label for="CEP">CEP:</label>
+        <input type="text" name="CEP" id="CEP" disabled>
+      </div>
+
+      <div>
+        <label for="Rua">Rua:</label>
+        <input type="text" name="Rua" id="Rua" disabled>
+      </div>
+
+      <div>
+        <label for="Cidade">Cidade:</label>
+        <input type="text" name="Cidade" id="Cidade" disabled>
+      </div>
+
+      
+      <div>
+        <label for="UF">UF:</label>
+        <input type="text" name="UF" id="UF" disabled>
+      </div>
+
+    </main>
+  </div>
 </body>
 </html>
