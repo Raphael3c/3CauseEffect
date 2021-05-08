@@ -1,3 +1,5 @@
+window.onload = list;
+
 const people = [
   {
     name: "Raphael", 
@@ -66,8 +68,6 @@ function toogleDisplay(id){
 function putInformation(name){
   const onePeople = people.find(people => people.name == name)
 
-  console.log(onePeople)
-
   document.getElementById("name").value = onePeople.name;
   document.getElementById("nascimento").value = onePeople.birthday;
   document.getElementById("Telefone").value = onePeople.telephone;
@@ -75,4 +75,32 @@ function putInformation(name){
   document.getElementById("Rua").value = onePeople.street;
   document.getElementById("Cidade").value = onePeople.city;
   document.getElementById("UF").value = onePeople.state;
+}
+
+function sortPeople(){
+  return people.sort((a, b) => {
+    return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
+  })
+}
+
+
+function list(){
+  const sortedPeople = sortPeople();
+  const element = document.getElementById("li1");
+  const newHTML = '<li><button onclick="putInformation("Adenizia")">Adenizia</button></li>'
+
+
+  var listItem = document.createElement("li");
+  var button = document.createElement("button");
+
+  button.onclick = () => putInformation("Adenizia");
+  button.appendChild(document.createTextNode(sortedPeople[0].name));
+
+  listItem.appendChild(button);
+
+  element.appendChild(listItem);
+
+  //for(let people in sortedPeople){
+  //  
+  //}
 }
