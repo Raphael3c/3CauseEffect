@@ -86,21 +86,55 @@ function sortPeople(){
 
 function list(){
   const sortedPeople = sortPeople();
-  const element = document.getElementById("li1");
-  const newHTML = '<li><button onclick="putInformation("Adenizia")">Adenizia</button></li>'
 
 
-  var listItem = document.createElement("li");
-  var button = document.createElement("button");
+  for(let index in sortedPeople){
+    if(sortedPeople[index].name[0] < 'G'){
+      var element = document.getElementById("li1");
+      var listItem = document.createElement("li");
+      var button = document.createElement("button");
+      button.onclick = () => putInformation(sortedPeople[0].name);
+      button.appendChild(document.createTextNode(sortedPeople[0].name));
 
-  button.onclick = () => putInformation("Adenizia");
-  button.appendChild(document.createTextNode(sortedPeople[0].name));
+      listItem.appendChild(button);
 
-  listItem.appendChild(button);
+      element.appendChild(listItem);
+    }
 
-  element.appendChild(listItem);
+    if(sortedPeople[index].name[0] > 'H' && sortedPeople[index].name[0] < 'O'){
+      var element = document.getElementById("li2");
+      var listItem = document.createElement("li");
+      var button = document.createElement("button");
+      button.onclick = () => putInformation(sortedPeople[index].name);
+      button.appendChild(document.createTextNode(sortedPeople[index].name));
 
-  //for(let people in sortedPeople){
-  //  
-  //}
+      listItem.appendChild(button);
+
+      element.appendChild(listItem);
+    }
+
+    if(sortedPeople[index].name[0] > 'P' && sortedPeople[index].name[0] < 'T'){
+      var element = document.getElementById("li3");
+      var listItem = document.createElement("li");
+      var button = document.createElement("button");
+      button.onclick = () => putInformation(sortedPeople[index].name);
+      button.appendChild(document.createTextNode(sortedPeople[index].name));
+
+      listItem.appendChild(button);
+
+      element.appendChild(listItem);
+    }
+
+    if(sortedPeople[index].name[0] > 'U' && sortedPeople[index].name[0] < 'Z'){
+      var element = document.getElementById("li4");
+      var listItem = document.createElement("li");
+      var button = document.createElement("button");
+      button.onclick = () => putInformation(sortedPeople[index].name);
+      button.appendChild(document.createTextNode(sortedPeople[index].name));
+
+      listItem.appendChild(button);
+
+      element.appendChild(listItem);
+    }
+  }
 }
