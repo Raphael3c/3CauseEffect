@@ -30,7 +30,7 @@ nav{
 }
 
 nav p{
-  padding: 10px;
+  padding: 10px 0 0 10px;
 }
 
 nav div{
@@ -64,6 +64,7 @@ i{
 ul{
   display: none;
   transition: all 1s ease-in;
+  list-style: none;
 }
 
 .container-li1{
@@ -124,4 +125,12 @@ main{
   width: 50rem;
   height: 30rem;
   background-color: #E4D9FF;
+}
+
+.mb-3{
+  display: block;
+}
+
+label{
+  display: block;
 }
