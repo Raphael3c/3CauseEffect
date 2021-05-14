@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
   <script src="./utils/functions.js" async></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   <title>Cause Effect</title>
 </head>
 <body>
@@ -75,42 +77,52 @@
 
     <main>
 
-      <div>
-        <label for="name">Nome:</label>
-        <input type="text"  name="name" id="name" disabled>
+      <div class="mb-3">
+        <div class="container">
+          <label for="name">Nome:</label>
+          <input type="text"  name="name" id="name" disabled>
+        </div>
       </div>
 
       <div class="mb-3">
-        <label for="nascimento">Nascimento:</label>
-        <input type="text" name="nascimento" id="nascimento" disabled>
+        <div class="container">
+          <label for="nascimento">Nascimento:</label>
+          <input type="text" name="nascimento" id="nascimento" disabled>
+        </div>
       </div>
 
       <div class="mb-3">
-        <label for="Telefone">Telefone:</label>
-        <input type="text" name="Telefone" id="Telefone" disabled>
+        <div class="container">
+          <label for="Telefone">Telefone:</label>
+          <input type="text" name="Telefone" id="Telefone" disabled>
+        </div>
+      </div>
+
+      <div class="mb-3 flex">
+        <div class="container">
+          <label  for="CEP">CEP:</label>
+            <input type="text" name="CEP" id="CEP" disabled>  
+        </div> 
+
+        <div class="container marginLeft"> 
+          <label  for="UF">UF:</label>
+          <input type="text" name="UF" size="1" id="UF" disabled>
+        </div>
       </div>
 
       <div class="mb-3">
-        <label for="CEP">CEP:</label>
-        <input type="text" name="CEP" id="CEP" disabled>
+        <div class="container">
+          <label for="Rua">Rua:</label>
+          <input type="text" name="Rua" id="Rua" disabled>
+        </div>
       </div>
 
       <div class="mb-3">
-        <label for="Rua">Rua:</label>
-        <input type="text" name="Rua" id="Rua" disabled>
-      </div>
-
-      <div class="mb-3">
-        <label for="Cidade">Cidade:</label>
-        <input type="text" name="Cidade" id="Cidade" disabled>
-      </div>
-
-      
-      <div class="mb-3">
-        <label for="UF">UF:</label>
-        <input type="text" name="UF" id="UF" disabled>
-      </div>
-
+        <div class="container">
+          <label for="Cidade">Cidade:</label>
+          <input type="text" name="Cidade" id="Cidade" disabled>
+        </div>
+      </div>    
     </main>
   </div>
 </body>

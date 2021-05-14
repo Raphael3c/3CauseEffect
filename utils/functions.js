@@ -5,7 +5,7 @@ const people = [
     name: "Raphael", 
     street: "Rua 8", 
     city: "Maracanaú", 
-    state: "Ceará", 
+    state: "CE", 
     country: "Brasil", 
     telephone: "85988495478", 
     birthday: "06/09"
@@ -14,7 +14,7 @@ const people = [
     name: "Madalena", 
     street: "Rua 9", 
     city: "Beberibe", 
-    state: "Ceará", 
+    state: "CE", 
     country: "Brasil", 
     telephone: "85999887711", 
     birthday: "05/05"
@@ -23,7 +23,7 @@ const people = [
     name: "Adenizia", 
     street: "Rua 10", 
     city: "Rendenção", 
-    state: "Ceará", 
+    state: "CE", 
     country: "Brasil", 
     telephone: "85986907087", 
     birthday: "14/01/1980"
@@ -32,7 +32,7 @@ const people = [
     name: "Renato", 
     street: "Rua 11", 
     city: "Araturi", 
-    state: "Ceará", 
+    state: "CE", 
     country: "Brasil", 
     telephone: "85996861003", 
     birthday: "05/07"
